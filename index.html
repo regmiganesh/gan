@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="pic/logo.png" alt="">
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#About"> < about > </a></li>
+                <li><a href="#contact">< contact > </a></li>
+                
+            </ul>
+        </div>
+        <div class="menu" onclick="openNav()"><span>&#9776;</span></div>  
+    
+    <nav class="sidenavbar" id="mySidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>          
+            <li><a href="#About"> < about > </a></li>
+            <li><a href="#contact"> < contact > </a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+
+ <section class="first-section">
+    <div class="social-media"> 
+        <i><a href="https://www.facebook.com/ganesh.regmi.9638/" class="fa fa-facebook"></a></i>
+        <i><a href="https://www.instagram.com/ganeshregmi470/?hl=en" class="fa fa-instagram"></a></i>
+        <i><a href="https://www.linkedin.com/in/ganesh-regmi-a19b95231/" class="fa fa-linkedin"></a></i>
+        <i><a href="https://github.com/regmiganesh" class="fa fa-github"></a></i>
+    </div>
+
+    <div class="info-about-me">
+        <h2>Hi , i am</h2> <br> <h1>Ganesh Regmi  <br> <span class="first-span">Front-end developer</span></h1>
+        <p> I'm a diploma in computer engineering student currently 
+             in last semester of my course, studying at
+            <a href="https://acmecollege.edu.np/">ACME College Of Engineering</a>.</p>
+        
+            <button class="first-btn" id="btn-for-me"> 
+                <a href="https://docs.google.com/document/d/12SSH3hzgKObLHD9o2z6BN8GW2jcbk8U5/edit?usp=sharing&ouid=105769523695702655491&rtpof=true&sd=true"> Resume </a>
+            </button>
+
+            <button  class="Second-btn" id="btn-for-me">
+            <a href="https://mail.google.com/mail/u/1/#snoozed?compose=CllgCJNxNdlFtpTfxNGxGbJhgpmhtTCmxTCqGmbsPSdqgxFGnzBxTHnbxDnlnLPmqQTbWQhrczg"> Contact Me</a>
+        </button>
+
+    </div>   
+    <button class="top" onclick="myfunction()"><i class="fa fa-arrow-circle-up"></i></button>
+ </section>
+
+
+ <section class="about-secction" id="About">
+   <div class="info-about-me">  
+
+    <div class="skill">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>javascript</li>
+        
+    </div>
+    <div class="skill">
+        <li>SEO</li>
+        <li>Figma & Canva</li>
+        <li>Vs code & Sublime</li>
+        <li>Lightroom</li>
+    </div>
+   </div>
+
+   <div class="for-images">
+       <img src="pic/gg.jpg" alt="">
+   </div>
+  
+
+
+ </section>
+
+ <!--get in touch-->
+
+ <section class="get-in-touch" id="contact">
+
+    <div class="inner-box-of-get-in-touch">
+        <div class="first-part">
+        <h1>Get in touch</h1>
+    </div>
+    <div class="about-my-self">
+        <h2> Let’s talk about your project and how I can help you. 
+            Even if you just want to chat about your future web project, 
+            feel free to get in touch with me.</h2>
+           
+            <button class="get-in-touch-btn">
+                    <a href="https://mail.google.com/mail/u/1/#snoozed?compose=CllgCJNxNdlFtpTfxNGxGbJhgpmhtTCmxTCqGmbsPSdqgxFGnzBxTHnbxDnlnLPmqQTbWQhrczg">Email Me</a>
+                </button>
+            
+    </div>
+    </div>
+
+
+ </section>
+  
+
+
+    <script src="app.js/app.js"></script>
+    
+</body>
+</html>

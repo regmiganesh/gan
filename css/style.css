@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+   
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #091324;
+  }
+::-webkit-scrollbar-thumb{
+  background-color: #0ef6cc;
+  border-radius: 10rem;
+   
+}
+header{
+    height: 10vh;
+    width: 100%;
+    background-color:#091324;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position:sticky;
+    top: 0;
+ 
+}
+header .logo{
+    margin: 0.7rem;
+    padding: 0.3rem;
+    
+}
+header .logo img{
+    height: 10vh;
+    
+}
+header .menu{
+    margin: 0 1rem;
+    font-size:2rem;
+    cursor: pointer;
+    display: none;
+    color: #0ef6cc;;
+}
+.sidenavbar{
+   height: 100%;
+   width: 0vh;
+   background-color:#091324;
+   color: #0ef6cc;;
+   position: fixed;
+   justify-content: center;
+   top: 0;
+   left: -32px;
+   padding: 1rem;   
+   overflow: hidden;   
+   transition: all ease 1s;
+   
+}
+.sidenavbar ul{
+  
+    text-align: center;
+    margin-left: 1rem;
+}
+
+.sidenavbar ul li{
+    list-style-type: none;
+    margin: 1rem ;
+    padding: 0.4rem;
+    margin-top: 2.4rem;
+    
+}
+.sidenavbar ul li a{
+    text-decoration: none;
+    color:#0ef6cc;;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1rem 0;
+    padding: 0.2rem;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+   
+}
+.sidenavbar .closebtn{
+ color: #0ef6cc;
+ text-decoration: none;
+ font-size: 2.5rem;
+ display: flex;
+ justify-content: right;
+ font-weight: 700;
+}
+header .navbar ul{
+ display: flex;
+}
+header .navbar ul li{
+ margin: 0 1rem 0 1rem;
+ list-style-type: none;
+}
+header .navbar ul li a{
+ text-decoration: none;
+ font-size: 1.2rem;
+ color: #0ef6cc;;
+ font-family: sans-serif;
+text-transform: capitalize;
+}
+
+@media only screen and (max-width:768px){
+header .menu{
+    display: block;
+}
+header .navbar{
+    display: none;
+}
+}
+
+/* css for first*/
+.first-section{
+    background-color: #091324;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.first-section .social-media{
+    padding: 0.5rem;  
+    width: 3%;
+    margin: 1rem;
+    position:fixed;
+    top: 20;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+}
+
+.first-section .social-media i .fa{
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    color: #2fffd2;
+    text-decoration: none;
+    text-align: center;
+   
+}
+.first-section .info-about-me{
+    height: auto;
+    width:80%;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 3rem;
+  
+}
+.first-section .info-about-me h1{
+    color: #3a4f50;
+    font-size: 3rem;
+    font-family: "Calibre",sans-serif;
+}
+.first-section .info-about-me h2{
+    color: #0ef6cc;;
+    font-weight: 500;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.first-section .info-about-me p{
+    color: #8a8782;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    margin: 1rem 0.5rem 0 0;
+    width: 70%;
+}
+.first-section .info-about-me p a{
+    text-decoration: none;
+    color: #0ef6cc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.first-section .info-about-me  #btn-for-me{
+    padding: 1rem;
+    width: 10rem;
+    margin:1rem 0.5rem 0 0;
+    border: 0.1rem solid#0ef6cc;
+    background-color: transparent;
+    color:   #0ef6cc;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    transition: 0.5s ;
+    transition-timing-function: ease-in-out;
+}
+.info-about-me #btn-for-me a{
+    text-decoration: none;
+    color: #0ef6cc;
+}
+.first-section .info-about-me #btn-for-me:hover{
+  background-color: #0f5a52;
+  opacity: 0.2;
+}
+
+
+@media only screen and (max-width:468px){
+    .first-section .info-about-me{
+        width: 80%;
+       
+    }
+    .first-section .info-about-me h1{
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+    .first-section .info-about-me #btn-for-me{
+        width: 8rem;
+        font-size: 0.8rem;
+        height: 7vh;
+        padding: 0.3rem;
+    }
+    .first-section .info-about-me p{
+        width: 100%;
+        padding: 0.2rem;
+    }
+    .first-section .info-about-me p a{
+        font-size: 0.8rem;
+    }
+    .first-section .social-media i .fa{
+        font-size: 1rem;
+       
+    }
+    header .logo{
+        font-size: 1rem;
+    }
+}
+   
+
+
+
+
+
+/*css for about section*/
+.about-secction{
+height: 100vh;
+width: 100%;
+background: #091324;
+display: flex;
+justify-content: space-around;
+padding: 1rem;
+}
+
+.about-secction .info-about-me{
+ 
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+.about-secction .info-about-me  .skill{
+    padding: 1rem;
+}
+.about-secction .info-about-me .skill li {
+    color: #0ef6cc;
+    list-style-type:none;
+    margin: 1rem 0 1rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about-secction .for-images{   
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+}
+
+.about-secction .for-images img{
+    width: 80%;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    
+}  
+
+
+@media only screen and (max-width:568px){
+    .about-secction{
+     
+        flex-direction: column-reverse;
+        height: auto;
+     
+
+    }
+    .about-secction .for-images{
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    .about-secction .info-about-me{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+
+    .about-secction .skill{
+    
+        width: 90%;
+        
+    }
+}
+
+.top{
+    height: 8vh;
+    width: 2.5rem;
+    color: #0ef6cc;
+    background: #091324;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    top: 90;
+    margin-top: 28rem;  
+    outline:none;
+    border: none;
+}
+.top i{
+    font-size: 2rem;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.get-in-touch{
+    height: 60vh;
+    width: 100%;
+    background-color: #091324;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.get-in-touch .inner-box-of-get-in-touch{
+    display: flex;
+    justify-content: space-around;
+
+}
+.get-in-touch .first-part{
+    width: 30%;
+    padding: 0.5rem;
+}
+.get-in-touch .first-part h1{
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+.get-in-touch .about-my-self{
+    width: 60%;
+    padding: 0.5rem;
+}
+.get-in-touch .about-my-self h2{
+    color: #3a4f50;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-align: justify;
+}
+.get-in-touch-btn{
+    margin-top: 0.6rem;
+  
+    border-radius: 0.25rem;
+    background-color: transparent;
+    color: #fff;
+    width: 7rem;
+    height: 7vh;
+    outline: none;
+    border: 0.13rem solid #0ef6cc;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.get-in-touch-btn a{
+    text-decoration: none;
+    color: #ffffff;
+    padding:0.8rem
+}
+
+
+.get-in-touch-btn:hover{
+   opacity: 0.7;
+}
+@media only screen and (max-width:568px){
+    .get-in-touch{
+        min-height: 90vh;
+    }
+    .get-in-touch .inner-box-of-get-in-touch{
+        flex-direction: column;
+    }
+    .get-in-touch .first-part{
+        width:auto;
+        margin: 2.2rem;
+        display: flex;
+        text-align: left;
+    }
+    .get-in-touch .about-my-self{
+        width:auto;
+        display: flex;
+        justify-content: right;
+        flex-direction: column;
+        margin: 2.2rem;
+    }
+    .get-in-touch .about-my-self h2{
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+}
